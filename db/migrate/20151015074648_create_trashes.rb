@@ -4,7 +4,7 @@ class CreateTrashes < ActiveRecord::Migration
       t.string :title, null: false
       t.string :read, null: false
       t.integer :category_id, null: false, default: 0
-      t.integer :knowledge
+      t.integer :knowledge_id
       t.timestamps null: false
     end
   end
