@@ -1,9 +1,12 @@
 # coding: utf-8
 
-0.upto(9) do |idx|
+path = Rails.root.join("db/seeds/trash.json")
+json = ActiveSupport::JSON.decode(File.read(path))
+
+json.each do |data|
   Trash.create(
-    title: "hoge",
-    read: "ほげ",
+    title: data["品目名"],
+    read: data["読み"],
     category_id: 0,
     knowledge_id: nil
   )
