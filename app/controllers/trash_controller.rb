@@ -1,2 +1,0 @@
-class TrashController < ApplicationController
-end
