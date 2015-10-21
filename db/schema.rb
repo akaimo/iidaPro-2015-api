@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151015074648) do
+ActiveRecord::Schema.define(version: 20151021111356) do
+
+  create_table "tips", force: :cascade do |t|
+    t.string   "title",      null: false
+    t.string   "detail",     null: false
+    t.string   "genre",      null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "trashes", force: :cascade do |t|
     t.string   "title",        null: false
