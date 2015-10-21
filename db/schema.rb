@@ -14,12 +14,12 @@
 ActiveRecord::Schema.define(version: 20151015074648) do
 
   create_table "trashes", force: :cascade do |t|
-    t.string   "title",                    null: false
-    t.string   "read",                     null: false
-    t.integer  "category_id",  default: 0, null: false
+    t.string   "title",        null: false
+    t.string   "read",         null: false
+    t.string   "category",     null: false
     t.integer  "knowledge_id"
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
 end
