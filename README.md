@@ -5,9 +5,10 @@
 ## API一覧
 - trash
 - tips
+- district
 
 ## trash
-ごみの分別に関するデータを扱います
+ごみの分別に関するデータを扱います。
 #### 一覧取得
 ```
 GET http://153.120.170.41:3000/api/v1/trash
@@ -35,12 +36,9 @@ GET http://153.120.170.41:3000/api/v1/trash
     ...
 ]
 ```
-#### 個別取得
-
-準備中
 
 ## tips
-豆知識に関するデータを扱います
+豆知識に関するデータを扱います。
 #### 一覧取得
 ```
 GET http://153.120.170.41:3000/api/v1/tip
@@ -66,5 +64,45 @@ GET http://153.120.170.41:3000/api/v1/tip
     ...
 ]
 ```
-#### 個別取得
-準備中
+
+## district
+地域データを扱います。
+
+#### 一覧取得
+```
+GET http://153.120.170.41:3000/api/v1/district
+```
+```
+[
+    {
+        "id": 1,
+        "area": "川崎区",
+        "town": "浅田",
+        "normal_1": "月",
+        "normal_2": "木",
+        "bottle": "火",
+        "plastic": "土",
+        "mixedPaper": "金",
+        "bigRefuse_date": "水",
+        "bigRefuse_1": 2,
+        "bigRefuse_2": 4,
+        "created_at": "2015-11-15T11:23:03.813Z",
+        "updated_at": "2015-11-15T11:23:03.813Z"
+    },
+    {
+        "id": 2,
+        "area": "川崎区",
+        "town": "浅野町",
+        "normal_1": "火",
+        "normal_2": "金",
+        "bottle": "土",
+        "plastic": "水",
+        "mixedPaper": "木",
+        "bigRefuse_date": "木",
+        "bigRefuse_1": 1,
+        "bigRefuse_2": 3,
+        "created_at": "2015-11-15T11:23:03.844Z",
+        "updated_at": "2015-11-15T11:23:03.844Z"
+    }
+]
+```
