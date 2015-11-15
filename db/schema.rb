@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151021111356) do
+ActiveRecord::Schema.define(version: 20151115083019) do
+
+  create_table "districts", force: :cascade do |t|
+    t.string   "area",           null: false
+    t.string   "town",           null: false
+    t.string   "normal_1",       null: false
+    t.string   "normal_2",       null: false
+    t.string   "bottle",         null: false
+    t.string   "plastic",        null: false
+    t.string   "mixedPaper",     null: false
+    t.string   "bigRefuse_date", null: false
+    t.integer  "bigRefuse_1",    null: false
+    t.integer  "bigRefuse_2",    null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
 
   create_table "tips", force: :cascade do |t|
     t.string   "title",      null: false

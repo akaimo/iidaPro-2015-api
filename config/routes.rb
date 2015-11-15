@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do 
       resources :trash
       resources :tip
+      resources :district
     end
   end
 end
