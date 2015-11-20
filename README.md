@@ -1,6 +1,7 @@
 # 飯田プロジェクト2015 APIサーバー
 ごみ分別アプリのAPIサーバーです。  
-アプリ本体はこっち https://github.com/akaimo/iidaPro-2015
+アプリ本体はこっち  
+https://github.com/akaimo/iidaPro-2015
 
 ## API一覧
 - trash
@@ -19,19 +20,21 @@ GET http://153.120.170.41:3000/api/v1/trash
         "id": 1,
         "title": "アイスピック",
         "read": "あいすぴっく",
+        "read_head": "あ",
         "category": "小物金属",
         "knowledge_id": null,
-        "created_at": "2015-10-16T12:30:34.157Z",
-        "updated_at": "2015-10-16T12:30:34.157Z"
+        "created_at": "2015-11-20T10:15:22.559Z",
+        "updated_at": "2015-11-20T10:15:22.559Z"
     },
     {
         "id": 2,
         "title": "アイロン(プラスチック製のおもちゃ)",
         "read": "あいろんぷらすちっくせい",
+        "read_head": "あ",
         "category": "普通ごみ",
         "knowledge_id": null,
-        "created_at": "2015-10-16T12:30:34.172Z",
-        "updated_at": "2015-10-16T12:30:34.172Z"
+        "created_at": "2015-11-20T10:15:22.590Z",
+        "updated_at": "2015-11-20T10:15:22.590Z"
     },
     ...
 ]
@@ -78,6 +81,9 @@ GET http://153.120.170.41:3000/api/v1/district
         "id": 1,
         "area": "川崎区",
         "town": "浅田",
+        "read": "あさだ",
+        "read_head": "あ",
+        "office": "南部",
         "normal_1": "月",
         "normal_2": "木",
         "bottle": "火",
@@ -86,13 +92,16 @@ GET http://153.120.170.41:3000/api/v1/district
         "bigRefuse_date": "水",
         "bigRefuse_1": 2,
         "bigRefuse_2": 4,
-        "created_at": "2015-11-15T11:23:03.813Z",
-        "updated_at": "2015-11-15T11:23:03.813Z"
+        "created_at": "2015-11-20T10:17:07.675Z",
+        "updated_at": "2015-11-20T10:17:07.675Z"
     },
     {
         "id": 2,
         "area": "川崎区",
         "town": "浅野町",
+        "read": "あさのちょう",
+        "read_head": "あ",
+        "office": "南部",
         "normal_1": "火",
         "normal_2": "金",
         "bottle": "土",
@@ -101,8 +110,18 @@ GET http://153.120.170.41:3000/api/v1/district
         "bigRefuse_date": "木",
         "bigRefuse_1": 1,
         "bigRefuse_2": 3,
-        "created_at": "2015-11-15T11:23:03.844Z",
-        "updated_at": "2015-11-15T11:23:03.844Z"
-    }
+        "created_at": "2015-11-20T10:17:07.706Z",
+        "updated_at": "2015-11-20T10:17:07.706Z"
+    },
+    ...
 ]
 ```
+
+## 更新履歴
+- 2015/11/20
+  - trashに'read_head'を追加
+  - districtに'read', 'read_head', 'office'を追加
+- 2015/11/15
+  - districtを追加
+- 2015/10/21
+  - READMEを作成
