@@ -8,6 +8,7 @@ json.each do |data|
   Trash.create(
     title: data["品目名"],
     read: data["読み"],
+    read_head: data["頭文字"],
     category: data["出し方"],
     knowledge_id: nil
   )

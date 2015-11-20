@@ -7,13 +7,16 @@ json.each do |data|
   District.create(
     area: data["区"],
     town: data["町名"],
+    read: data["よみがな"],
+    read_head: data["頭文字"],
+    office: data["事業所"],
     normal_1: data["普通ごみ1"],
     normal_2: data["普通ごみ2"],
-    bottle: data["ペットボトルなど・乾電池"],
-    plastic: data["プラスチック製容器包装"],
+    bottle: data["PET等・乾電池"],
+    plastic: data["プラ容器"],
     mixedPaper: data["ミックスペーパー"],
-    bigRefuse_date: data["粗大ごみ・小物金属"],
-    bigRefuse_1: data["粗大ごみ・小物金属1"],
-    bigRefuse_2: data["粗大ごみ・小物金属2"]
+    bigRefuse_date: data["粗大・金属"],
+    bigRefuse_1: data["粗大・金属1"],
+    bigRefuse_2: data["粗大・金属2"]
   )
 end

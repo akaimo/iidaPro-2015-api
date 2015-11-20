@@ -3,6 +3,9 @@ class CreateDistricts < ActiveRecord::Migration
     create_table :districts do |t|
       t.string :area, null: false
       t.string :town, null: false
+      t.string :read, null: false
+      t.string :read_head, null: false
+      t.string :office, null: false
       t.string :normal_1, null: false
       t.string :normal_2, null: false
       t.string :bottle, null: false

@@ -16,6 +16,9 @@ ActiveRecord::Schema.define(version: 20151115083019) do
   create_table "districts", force: :cascade do |t|
     t.string   "area",           null: false
     t.string   "town",           null: false
+    t.string   "read",           null: false
+    t.string   "read_head",      null: false
+    t.string   "office",         null: false
     t.string   "normal_1",       null: false
     t.string   "normal_2",       null: false
     t.string   "bottle",         null: false
@@ -39,6 +42,7 @@ ActiveRecord::Schema.define(version: 20151115083019) do
   create_table "trashes", force: :cascade do |t|
     t.string   "title",        null: false
     t.string   "read",         null: false
+    t.string   "read_head",    null: false
     t.string   "category",     null: false
     t.integer  "knowledge_id"
     t.datetime "created_at",   null: false
