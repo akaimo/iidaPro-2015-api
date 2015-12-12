@@ -44,7 +44,8 @@ ActiveRecord::Schema.define(version: 20151115083019) do
     t.string   "read",         null: false
     t.string   "read_head",    null: false
     t.string   "category",     null: false
-    t.integer  "knowledge_id"
+    t.string   "all_category", null: false
+    t.string   "info",         null: false
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end

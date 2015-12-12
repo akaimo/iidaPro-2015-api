@@ -5,7 +5,8 @@ class CreateTrashes < ActiveRecord::Migration
       t.string :read, null: false
       t.string :read_head, null: false
       t.string :category, null: false
-      t.integer :knowledge_id
+      t.string :all_category, null: false
+      t.string :info, null: false
       t.timestamps null: false
     end
   end
