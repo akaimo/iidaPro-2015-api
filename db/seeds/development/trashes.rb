@@ -9,8 +9,8 @@ json.each do |data|
     title: data["品目名"],
     read: data["読み"],
     read_head: data["頭文字"],
-    category: data["出し方"],
-    all_category: 'hoge',
-    info: 'hoge'
+    category: data["検索用出し方"],
+    all_category: data["詳細用出し方"],
+    info: data["出し方のポイント"]
   )
 end
